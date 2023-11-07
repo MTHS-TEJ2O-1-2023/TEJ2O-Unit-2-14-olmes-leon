@@ -16,33 +16,33 @@ basic.clearScreen()
 
 // when "A" is pressed, the pixels move down in a diagnol
 input.onButtonPressed(Button.A, function () {
-    // setup
-    basic.clearScreen()
-    loopCounter = 0
-    sprite = game.createSprite(0, 0)
+  // setup
+  basic.clearScreen()
+  loopCounter = 0
+  sprite = game.createSprite(0, 0)
 
-    while (loopCounter <= 5) {
-        sprite.set(LedSpriteProperty.X, loopCounter)
-        sprite.set(LedSpriteProperty.Y, loopCounter)
-        loopCounter = loopCounter + 1
-        basic.pause(500)
+  while (loopCounter <= 5) {
+      sprite.set(LedSpriteProperty.X, loopCounter)
+      sprite.set(LedSpriteProperty.Y, loopCounter)
+      loopCounter = loopCounter + 1
+   basic.pause(500)
     }
     sprite.delete()
     basic.showIcon(IconNames.Happy)
 })
 
-// when "B" is pressed, the pixels move around the outside edge of the LED matrix
+// when "B" is pressed, the pixels move down in a diagnol
 input.onButtonPressed(Button.B, function () {
     // setup
     basic.clearScreen()
-    loopCounter = 5
-    sprite = game.createSprite(5, 5)
+    loopCounter = 0
+    sprite = game.createSprite(0, 0)
 
-    while (loopCounter >= 0) {
-        sprite.set(LedSpriteProperty.X, loopCounter)
-        sprite.set(LedSpriteProperty.Y, loopCounter)
-        loopCounter = loopCounter - 1
-        basic.pause(500)
+  while (loopCounter <= 5) {
+      sprite.set(LedSpriteProperty.X, loopCounter)
+      sprite.set(LedSpriteProperty.Y, loopCounter)
+      loopCounter = loopCounter + 1
+      basic.pause(500)
     }
     sprite.delete()
     basic.showIcon(IconNames.Happy)
