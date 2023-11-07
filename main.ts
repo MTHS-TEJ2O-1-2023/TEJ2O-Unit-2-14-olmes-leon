@@ -22,28 +22,28 @@ input.onButtonPressed(Button.A, function () {
   sprite = game.createSprite(0, 0)
 
   while (loopCounter <= 5) {
-      sprite.set(LedSpriteProperty.X, loopCounter)
-      sprite.set(LedSpriteProperty.Y, loopCounter)
-      loopCounter = loopCounter + 1
+    sprite.set(LedSpriteProperty.X, loopCounter)
+    sprite.set(LedSpriteProperty.Y, loopCounter)
+    loopCounter = loopCounter + 1
    basic.pause(500)
-    }
-    sprite.delete()
-    basic.showIcon(IconNames.Happy)
+  }
+  sprite.delete()
+  basic.showIcon(IconNames.Happy)
 })
 
 // when "B" is pressed, the pixels move down in a diagnol
 input.onButtonPressed(Button.B, function () {
-    // setup
-    basic.clearScreen()
-    loopCounter = 0
-    sprite = game.createSprite(0, 0)
+  // setup
+  basic.clearScreen()
+  loopCounter = 0
+  sprite = game.createSprite(0, 0)
 
   while (loopCounter <= 5) {
-      sprite.set(LedSpriteProperty.X, loopCounter)
-      sprite.set(LedSpriteProperty.Y, loopCounter)
-      loopCounter = loopCounter + 1
-      basic.pause(500)
-    }
-    sprite.delete()
-    basic.showIcon(IconNames.Happy)
+    sprite.set(LedSpriteProperty.X, loopCounter)
+    sprite.set(LedSpriteProperty.Y, loopCounter)
+    loopCounter = loopCounter + 1
+    basic.pause(500)
+  }
+  sprite.delete()
+  basic.showIcon(IconNames.Happy)
 })
