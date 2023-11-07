@@ -31,17 +31,17 @@ input.onButtonPressed(Button.A, function () {
   basic.showIcon(IconNames.Happy)
 })
 
-// when "B" is pressed, the pixels move down in a diagnol
+// when "B" is pressed, the pixels move up in a diagnol
 input.onButtonPressed(Button.B, function () {
   // setup
   basic.clearScreen()
-  loopCounter = 0
-  sprite = game.createSprite(0, 0)
+  loopCounter = 5
+  sprite = game.createSprite(5, 5)
 
   while (loopCounter <= 5) {
     sprite.set(LedSpriteProperty.X, loopCounter)
     sprite.set(LedSpriteProperty.Y, loopCounter)
-    loopCounter = loopCounter + 1
+    loopCounter = loopCounter - 1
     basic.pause(500)
   }
   sprite.delete()
