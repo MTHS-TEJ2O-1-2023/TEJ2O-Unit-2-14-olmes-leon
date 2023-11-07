@@ -38,7 +38,7 @@ input.onButtonPressed(Button.B, function () {
   loopCounter = 5
   sprite = game.createSprite(5, 5)
 
-  while (loopCounter <= 5) {
+  while (loopCounter >= 0) {
     sprite.set(LedSpriteProperty.X, loopCounter)
     sprite.set(LedSpriteProperty.Y, loopCounter)
     loopCounter = loopCounter - 1
